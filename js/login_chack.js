@@ -21,7 +21,7 @@ if (localStorage.getItem("user_login") != null) {
   document.getElementsByClassName('nav_userImg')[0].src = "./img/nav_footer/unknow_user.png";
   document.getElementsByClassName('nav_username')[0].innerHTML = "用戶登入"
   document.getElementsByClassName('nav_link')[5].style.display = "none";
-
+  document.getElementsByClassName('footer_chat_link')[0].style.display = "none";
 }
 
 function logout() {
