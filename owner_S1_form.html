@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>哎你瞧-人才媒合平台</title>
+  <!-- headerfooter的rwd,不能刪掉 -->
+  <link rel="stylesheet" href="./css/header_footer.css">
+  <!-- bootstrap的css的cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <!--bootstrap的js的cdn  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <!--google material的cdn  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <!--headerfooter的JS,不能刪掉 -->
+  <script src="./js/header_footer.js"> </script>
+  <!-- 要再增加link的話,請在下方繼續加 -->
+  <link rel="stylesheet" href="css/owner_S1_form.css">
+  <script src="./js/expert_S1_form.js"> </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+</head>
+
+<body>
+  <!-- 底部聊天談窗按鈕--------------------------------------->
+  <a class="footer_chat_link" href=""><img src="./img/nav_footer/chat_icon.png" alt="">
+    <p>即時通訊</p>
+    </div>
+  </a>
+  <!-- 導覽列--------------------------------------->
+  <nav>
+    <div class="nav_top">
+        <div class="nav_topWidth">
+            <div class="lang">
+                <span class="material-icons lang_earth"> language</span>
+                中文
+            </div>
+            <ul>
+                <li class="cn">中文</li>
+                <li class="en">EN</li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="nav_bottom">
+        <div class="nav_logo"><img src="./img/nav_footer/nav_logo.png" alt="" onclick="location.href='./index/index.html';"></div>
+        <i class="fa-solid fa-bars nav_hamburger"></i>
+        <ul class="nav_item">   
+            <i class="fa-solid fa-chevron-left nav_turnback"></i>
+            <li class="nav_link"><a href="./index.html">首頁</a></li>
+            <li class="nav_link ">工作類別<i class="fa-solid fa-chevron-down nav_fa-chevron-down"></i>
+                <div class="nav_workKind_list">
+                    <ul class="nav_workKind">
+                        <li><a href="">人力</a></li>
+                        <li><a href="">餐飲</a></li>
+                        <li><a href="">門市</a></li>
+                        <li><a href="">辦公</a></li>
+                        <li><a href="">補救</a></li>
+                    </ul>
+                    <ul class="nav_workKind">
+                        <li><a href="">活動</a></li>
+                        <li><a href="">銷售</a></li>
+                        <li><a href="">市調</a></li>
+                        <li><a href="">設計</a></li>
+                        <li><a href="">其他</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li class="nav_link"><a href="./News.html">最新公告</a></li>
+            <li class="nav_link nav_member">
+                <a href="./../loginform.html" class="nav_membe_btn"><img src="./img/nav_footer/unknow_user.png"
+                    class="nav_userImg"><p class="nav_username" style="margin:0px;">用戶登入</p></a>
+              </li>
+              <li class="nav_link"><a href="#">下載APP</a></li>
+              <li class="nav_link"><a href="./index/index.html" onclick="logout()">登出
+                </a></li>
+        </ul>
+
+    </div>
+    <div class="nav_item_dark"></div>
+
+</nav>
+  <!-- 佔nav空間用 100px--------------->
+  <div class="block_margin_top" style="height: 100px;width:100%;"></div>
+  <!-- 開始編寫內容,不死不休↓ -------->
+
+  <div class="area">
+    <img src="img/form/ownerS1.png" alt="" class="step1">
+
+
+    <ul class="title">
+      <li>
+        <p>Step1.發案方實名認證</p>
+      </li>
+      <li>
+        <p class="red"> (*號為必填選項)</p>
+      </li>
+    </ul>
+
+    <div class="name">
+      <p class="rtp">請輸入用戶名稱(需跟身分證相符) <font color="#CD0025">*</font>
+      </p>
+      <input type="text">
+    </div>
+
+    <div class="IDcard">
+      <p class="rtp">本人正面照及身分證正反面照 <font color="#CD0025">*</font>
+      </p>
+
+      <div class="skeep">
+
+        <div class="upload_component" id="uppc3">
+          <input type="file" class="upload_input">
+          <img class="upload_img hide" />
+          <div class="upload_content">
+            <p> 正面清晰照片</p>
+            <i class="fa-solid fa-plus"></i>
+            <p>檔案大小不得大於 5MB</p>
+            <p>規格限JPG 或 JPEG 格式</p>
+          </div>
+        </div>
+
+        <div class="upload_component" id="uppc4">
+          <input type="file" class="upload_input">
+          <img class="upload_img hide" />
+          <div class="upload_content">
+            <p> 身分證正面照</p>
+            <i class="fa-solid fa-plus"></i>
+            <p>檔案大小不得大於 5MB</p>
+            <p>規格限JPG 或 JPEG 格式</p>
+          </div>
+        </div>
+
+        <div class="upload_component" id="uppc5">
+          <input type="file" class="upload_input">
+          <img class="upload_img hide" />
+          <div class="upload_content">
+            <p> 身分證背面照</p>
+            <i class="fa-solid fa-plus"></i>
+            <p>檔案大小不得大於 5MB</p>
+            <p>規格限JPG 或 JPEG 格式</p>
+          </div>
+        </div>
+      </div>
+      <div class="realname">
+        <p class="one">※僅作為實名認證使用</p>
+        <p class="two">※僅作為實名認證使用</p>
+
+      </div>
+
+
+
+
+    </div>
+
+    <div class="identity">
+      <p class="rtp">發案者身分 <font color="#CD0025">*</font>
+      </p>
+    </div>
+
+
+    <ul class="chose">
+      <li class="person">
+        <input type="radio" class="person" name="drone" value="person" checked />
+        <label>個人接案 (可直接跳至下一頁)</label>
+      </li>
+
+      <li class="company">
+        <input type="radio" class="company" name="drone" value="company" />
+        <label for="company">公司行號接案(請續填下列表單)</label>
+      </li>
+    </ul>
+
+
+    <div class="companypopup">
+
+
+      <ul>
+        <li>
+          <p>公司名稱 <font color="#CD0025">*</font>
+          </p>
+          <input type="text">
+        </li>
+
+        <li>
+          <p>公司電話 <font color="#CD0025">*</font>
+          </p>
+          <input type="text">
+        </li>
+
+        <li>
+          <p>公司地址 <font color="#CD0025">*</font>
+          </p>
+          <div class="dropdown">
+
+            <form class="citychose" >
+              <i class="fa-solid fa-chevron-down"></i>
+              <select name="YourLocation" >
+                <option value="" style="display: none;" disabled selected>選擇縣市</option>
+                <option value="">台北市</option>
+                <option value="">新北市</option>
+                <option value="">基隆市</option>
+                <option value="">桃園縣</option>
+                <option value="">新竹市</option>
+                <option value="">新竹縣</option>
+                <option value="">苗栗縣</option>
+                <option value="">台中市</option>
+                <option value="">彰化縣</option>
+                <option value="">南投縣</option>
+                <option value="">新竹市</option>
+                <option value="">新竹縣</option>
+                <option value="">雲林縣</option>
+                <option value="">嘉義市</option>
+                <option value="">嘉義縣</option>
+                <option value="">台南市</option>
+                <option value="">高雄市</option>
+                <option value="">屏東縣</option>
+                <option value="">台東縣</option>
+                <option value="">花蓮縣</option>
+                <option value="">宜蘭縣</option>
+                <option value="">澎湖縣</option>
+                <option value="">金門縣</option>
+                <option value="">連江縣</option>
+              
+              </select>
+            </form>
+
+
+            <form class="areachose" >
+              <i class="fa-solid fa-chevron-down"></i>
+              <select name="YourLocation" >
+                <option value="" style="display: none;" disabled selected>選擇行政區</option>
+                <option value="">松山區</option>
+                <option value="">信義區</option>
+                <option value="">大安區</option>
+                <option value="">中山區</option>
+                <option value="">中正區</option>
+                <option value="">大同區</option>
+                <option value="">萬華區</option>
+                <option value="">文山區</option>
+                <option value="">南港區</option>
+                <option value="">內湖區</option>
+                <option value="">士林區</option>
+                <option value="">北投區</option>
+                             
+              </select>
+            </form>
+
+            <!-- <input type="text" placeholder="台北市"> -->
+            <!-- <input type="text" class="chi" placeholder="中山區"> -->
+          </div>
+
+          <input type="text" class="companyaddr">
+
+        </li>
+
+
+        <li>
+          <p>官方網站</p>
+          <input type="text" class="companyweb">
+
+
+        </li>
+
+
+        <li>
+          <p>請上傳公司營業登記 <font color="#CD0025">*</font>
+          </p>
+
+
+          <div class="upload_componentsm" id="uppc">
+            <input type="file" class="upload_input">
+            <img class="upload_img hide" />
+            <div class="upload_content">
+              <p> 公司營業登記證明</p>
+              <i class="fa-solid fa-plus"></i>
+              <p>檔案大小不得大於 5MB</p>
+              <p>規格限JPG 或 JPEG 格式</p>
+            </div>
+          </div>
+          <p class="alr">※僅作為實名認證使用</p>
+
+
+        </li>
+
+        <p>請上傳公司環境照 (最多4張)
+        </p>
+
+        <div class="envpc">
+          <div class="upload_componentsm" id="uppc1">
+            <input type="file" class="upload_input">
+            <img class="upload_img hide" />
+            <div class="upload_content">
+              <p> 公司環境照</p>
+              <i class="fa-solid fa-plus"></i>
+              <p>檔案大小不得大於 5MB</p>
+              <p>規格限JPG 或 JPEG 格式</p>
+              <li>
+            </div>
+          </div>
+
+
+          <div class="upload_componentsm" id="uppc1-1">
+            <input type="file" class="upload_input">
+            <img class="upload_img hide" />
+            <div class="upload_content">
+              <p> 公司環境照</p>
+              <i class="fa-solid fa-plus"></i>
+              <p>檔案大小不得大於 5MB</p>
+              <p>規格限JPG 或 JPEG 格式</p>
+              <li>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="upload_componentsm" id="uppc1-2">
+            <input type="file" class="upload_input">
+            <img class="upload_img hide" />
+            <div class="upload_content">
+              <p> 公司環境照</p>
+              <i class="fa-solid fa-plus"></i>
+              <p>檔案大小不得大於 5MB</p>
+              <p>規格限JPG 或 JPEG 格式</p>
+              <li>
+            </div>
+          </div>
+
+
+
+          <div class="upload_componentsm" id="uppc1-3">
+            <input type="file" class="upload_input">
+            <img class="upload_img hide" />
+            <div class="upload_content">
+              <p> 公司環境照</p>
+              <i class="fa-solid fa-plus"></i>
+              <p>檔案大小不得大於 5MB</p>
+              <p>規格限JPG 或 JPEG 格式</p>
+              <li>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+    </li>
+
+    </ul>
+
+
+
+
+  </div>
+
+
+
+  <div class="btn">
+    <a href="" class="keep">暫存</a>
+    <a href="owner_S2_form.html" class="next">下一步</a>
+
+  </div>
+
+
+
+
+  </div>
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+  <!--編寫結束--------->
+  <footer>
+    <div class="footer_contain">
+      <div class="footer_content_detail footer_left">
+        <div class=" footer_left_one">
+          <div>
+            <p>
+              官方服務中心
+            </p>
+            <ul>
+              <li>週一至週五 8:30~21:00</li>
+              <li>周末及國定假日 9:00~17:30</li>
+            </ul>
+          </div>
+          <div>
+            <p>免費服務專線:</p>
+            <ul>
+              <li>02-0571-2241(台北)</li>
+              <li>04-0571-2241(台中)</li>
+              <li>06-0571-2241(台南)</li>
+            </ul>
+          </div>
+        </div>
+        <div class=" footer_left_two">
+          <div>
+            <p>台北總公司</p>
+            <ul>
+              <li>104台北市中山區南京東路三段219號5樓</li>
+            </ul>
+          </div>
+          <div>
+            <p>台中分公司</p>
+            <ul>
+              <li>412 臺中市大里區翠堤路741號</li>
+            </ul>
+          </div>
+          <div>
+            <p>台南分公司</p>
+            <ul>
+              <li>709 臺南市安南區淵西二街821號</li>
+          </div>
+
+
+
+          </ul>
+        </div>
+      </div>
+
+      <div class=" footer_right footer_content_detail">
+        <div class="footer_right_one">
+          <div class="footer_right_1">
+            <p>哎你瞧人力銀行</p>
+            <ul>
+              <li>哎你瞧股份有限公司(私業許字第12001-X號)</li>
+              <li>哎你瞧股份有限公司臺中分公司(私業許字第12001-X號)</li>
+              <li>哎你瞧股份有限公司臺南分公司(私業許字第12001-X號)</li>
+            </ul>
+          </div>
+
+          <div class="footer_right_2 footer_copyright">
+            <p>哎你瞧股份有限公司版權所有</p>
+            <p>©2023 I need you All Rights Reserved. </p>
+            <p>最佳化瀏覽器: Google Chrome 、Safari、Firefox</p>
+          </div>
+
+        </div>
+
+
+        <div class="footer_right_two ">
+          <ul class="content">
+            <li class="sns_link"><a href="">
+                <img src="./img/nav_footer/icon_facebook.png" alt="">
+                <p>官方臉書</p>
+              </a>
+            </li>
+            <li class="sns_link"><a href="">
+                <img src="./img/nav_footer/icon_ig.png" alt="">
+                <p>官方ig</p>
+              </a>
+            </li>
+            <li class="sns_link"><a href="">
+                <img src="./img/nav_footer/icon_line.png" alt="">
+                <p>官方line</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
+
+    </div>
+  </footer>
+  <script src="./js/login_chack.js"></script>
+</body>
+
+</html>

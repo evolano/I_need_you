@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哎你瞧-人才媒合平台</title>
+    <!-- headerfooter的rwd,不能刪掉 -->
+    <link rel="stylesheet" href="./css/header_footer.css">
+    <!-- bootstrap的css的cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!--bootstrap的js的cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!--google material的cdn  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!--headerfooter的JS,不能刪掉 -->
+    <script src="./js/header_footer.js"> </script>
+    <!-- 要再增加link的話,請在下方繼續加 -->
+    <link rel="stylesheet" href="./css/Yating_apply_job.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- 底部聊天談窗按鈕--------------------------------------->
+    <a class="footer_chat_link" href=""><img src="./img/nav_footer/chat_icon.png" alt="">
+        <p>即時通訊</p>
+        </div>
+    </a>
+    <!-- 導覽列--------------------------------------->
+    <nav>
+        <div class="nav_top">
+            <div class="nav_topWidth">
+                <div class="lang">
+                    <span class="material-icons lang_earth"> language</span>
+                    中文
+                </div>
+                <ul>
+                    <li class="cn">中文</li>
+                    <li class="en">EN</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="nav_bottom">
+            <div class="nav_logo"><img src="./img/nav_footer/nav_logo.png" alt="" onclick="location.href='./index/index.html';"></div>
+            <i class="fa-solid fa-bars nav_hamburger"></i>
+            <ul class="nav_item">   
+                <i class="fa-solid fa-chevron-left nav_turnback"></i>
+                <li class="nav_link"><a href="./index.html">首頁</a></li>
+                <li class="nav_link ">工作類別<i class="fa-solid fa-chevron-down nav_fa-chevron-down"></i>
+                    <div class="nav_workKind_list">
+                        <ul class="nav_workKind">
+                            <li><a href="">人力</a></li>
+                            <li><a href="">餐飲</a></li>
+                            <li><a href="">門市</a></li>
+                            <li><a href="">辦公</a></li>
+                            <li><a href="">補救</a></li>
+                        </ul>
+                        <ul class="nav_workKind">
+                            <li><a href="">活動</a></li>
+                            <li><a href="">銷售</a></li>
+                            <li><a href="">市調</a></li>
+                            <li><a href="">設計</a></li>
+                            <li><a href="">其他</a></li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li class="nav_link"><a href="./News.html">最新公告</a></li>
+                <li class="nav_link nav_member">
+                    <a href="./../loginform.html" class="nav_membe_btn"><img src="./img/nav_footer/unknow_user.png"
+                        class="nav_userImg"><p class="nav_username" style="margin:0px;">用戶登入</p></a>
+                  </li>
+                  <li class="nav_link"><a href="#">下載APP</a></li>
+                  <li class="nav_link"><a href="./index/index.html" onclick="logout()">登出
+                    </a></li>
+            </ul>
+
+        </div>
+        <div class="nav_item_dark"></div>
+
+    </nav>
+    <!-- 佔nav空間用 100px--------------->
+    <div class="block_margin_top" style="height: 100px;width:100%;"></div>
+    <!-- 開始編寫內容,不死不休↓ -------->
+    <section class="main">
+        <div class="contain">
+            <div aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">首頁</a></li>
+                    <li class="breadcrumb-item"><a href="#">個人頁面</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">我應徵的工作</li>
+                </ol>
+            </div>
+
+            <div class="personalJob">
+                <a class="postJob" href="#">我應徵的工作</a>
+                <span class="spacer"></span>
+                <a class="DoneJob" href="#">已完成的工作</a>
+            </div>
+
+            <div class="search_section">
+                <div class="search">
+                    <form>
+                        <input type="text" name="query" placeholder="&#xF002; 輸入應徵者姓名" autocomplete="off"
+                            style="font-family:Arial, FontAwesome">
+                        <input type="submit" value="搜&nbsp;尋">
+                    </form>
+                </div>
+
+
+                <div class="custom-select">
+                    <select class="category" name="category" id="customSelect">
+                        <option value="" disabled selected>工作發布時間</option>
+                        <option value="option1">從新到舊</option>
+                        <option value="option2">從舊到新</option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+
+            </div>
+
+
+            <!---------雅婷應徵的工作區------------ -->
+            <div class="job_section">
+
+
+                <!-- -----開幕活動企劃 --------->
+                <div class="apply_job_card">
+                    <div class="photo">
+                        <img src="./img/user/owner_16.jpg" alt="">
+                    </div>
+                    <div class="job_detail">
+                        <div>
+                            <span class="job_name">開幕活動企劃</span>
+                        </div>
+                        <div>
+                            <span class="comment">發案者評價<span class="score"> 5.0 <span
+                                        class="star">★</span></span></span>
+                        </div>
+                        <div class="buttons">
+                            <a class="boss_file" href="./owner_case_detail_wu.html">查看發案者檔案</a>
+                            <a class="message" href="./chat_toOwner_wu.html"><i class="fa-brands fa-facebook-messenger"></i>&nbsp;傳送訊息</i></a>
+                            <a class="cancel" href="">取消應徵</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- -----送修手機 -------->
+                <div class="apply_job_card">
+                    <div class="photo">
+                        <img src="./img/user/owner_17.jpg" alt="">
+                    </div>
+                    <div class="job_detail">
+                        <div>
+                            <span class="job_name">送修手機</span>
+                        </div>
+                        <div>
+                            <span class="comment">發案者評價<span class="score"> 4.0 <span
+                                        class="star">★</span></span></span>
+                        </div>
+                        <div class="buttons">
+                            <a class="boss_file" href="">查看發案者檔案</a>
+                            <a class="message" href=""><i class="fa-brands fa-facebook-messenger"></i>&nbsp;傳送訊息</i></a>
+                            <a class="cancel" href="">取消應徵</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- -----潮牌排隊 -------->
+                <div class="apply_job_card">
+                    <div class="photo">
+                        <img src="./img/user/owner_18.jpg" alt="">
+                    </div>
+                    <div class="job_detail">
+                        <div>
+                            <span class="job_name">潮牌排隊</span>
+                        </div>
+                        <div>
+                            <span class="comment">發案者評價<span class="score"> 4.0 <span
+                                        class="star">★</span></span></span>
+                        </div>
+                        <div class="buttons">
+                            <a class="boss_file" href="">查看發案者檔案</a>
+                            <a class="message" href=""><i class="fa-brands fa-facebook-messenger"></i>&nbsp;傳送訊息</i></a>
+                            <a class="cancel" href="">取消應徵</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- -----陪市場採購 -------->
+                <div class="apply_job_card">
+                    <div class="photo">
+                        <img src="./img/user/owner_4.jpg" alt="">
+                    </div>
+                    <div class="job_detail">
+                        <div>
+                            <span class="job_name">陪市場採購</span>
+                        </div>
+                        <div>
+                            <span class="comment">發案者評價<span class="score"> 5.0 <span
+                                        class="star">★</span></span></span>
+                        </div>
+                        <div class="buttons">
+                            <a class="boss_file" href="">查看發案者檔案</a>
+                            <a class="message" href=""><i class="fa-brands fa-facebook-messenger"></i>&nbsp;傳送訊息</i></a>
+                            <a class="cancel" href="">取消應徵</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+            <!---------頁碼----------- -->
+            <div class="pagination">
+                <span class="page_number">&lt; 1 &gt;</span>
+            </div>
+
+
+
+    </section>
+    <!--編寫結束--------->
+    <footer>
+        <div class="footer_contain">
+            <div class="footer_content_detail footer_left">
+                <div class=" footer_left_one">
+                    <div>
+                        <p>
+                            官方服務中心
+                        </p>
+                        <ul>
+                            <li>週一至週五 8:30~21:00</li>
+                            <li>周末及國定假日 9:00~17:30</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>免費服務專線:</p>
+                        <ul>
+                            <li>02-0571-2241(台北)</li>
+                            <li>04-0571-2241(台中)</li>
+                            <li>06-0571-2241(台南)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" footer_left_two">
+                    <div>
+                        <p>台北總公司</p>
+                        <ul>
+                            <li>104台北市中山區南京東路三段219號5樓</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>台中分公司</p>
+                        <ul>
+                            <li>412 臺中市大里區翠堤路741號</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>台南分公司</p>
+                        <ul>
+                            <li>709 臺南市安南區淵西二街821號</li>
+                    </div>
+
+
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class=" footer_right footer_content_detail">
+                <div class="footer_right_one">
+                    <div class="footer_right_1">
+                        <p>哎你瞧人力銀行</p>
+                        <ul>
+                            <li>哎你瞧股份有限公司(私業許字第12001-X號)</li>
+                            <li>哎你瞧股份有限公司臺中分公司(私業許字第12001-X號)</li>
+                            <li>哎你瞧股份有限公司臺南分公司(私業許字第12001-X號)</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_right_2 footer_copyright">
+                        <p>哎你瞧股份有限公司版權所有</p>
+                        <p>©2023 I need you All Rights Reserved. </p>
+                        <p>最佳化瀏覽器: Google Chrome 、Safari、Firefox</p>
+                    </div>
+
+                </div>
+
+
+                <div class="footer_right_two ">
+                    <ul class="content">
+                        <li class="sns_link"><a href="">
+                                <img src="./img/nav_footer/icon_facebook.png" alt="">
+                                <p>官方臉書</p>
+                            </a>
+                        </li>
+                        <li class="sns_link"><a href="">
+                                <img src="./img/nav_footer/icon_ig.png" alt="">
+                                <p>官方ig</p>
+                            </a>
+                        </li>
+                        <li class="sns_link"><a href="">
+                                <img src="./img/nav_footer/icon_line.png" alt="">
+                                <p>官方line</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="./js/login_chack.js"></script>
+</body>
+
+</html>

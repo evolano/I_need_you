@@ -1,0 +1,14 @@
+.preview {
+    background:#888888;
+    width:280px;
+    height:auto;
+    text-align:center;
+  }
+  .preview img{
+    height:280px;
+    order:1;
+    vertical-align : middle;
+  }
+  .img{
+    max-width: 280px;
+  }

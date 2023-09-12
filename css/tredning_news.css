@@ -1,0 +1,59 @@
+@import url("tredning_news.css");
+
+.main {
+    width: 1200px;
+    font-family: arial;
+    padding-left: 20px;
+    margin: 0 auto;
+}
+
+
+.news_section {
+    width: 980px;
+    margin: 0 auto;
+    /* outline: 1px solid green; */
+}
+
+
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 120px;
+    margin-bottom: 10px;
+}
+
+span{
+    display: block;
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 13px;
+    color: #505050;
+}
+
+.time{
+    margin-left:12px ;
+}
+
+
+img{
+    border-radius: 10px;
+    /* display: block;
+    margin: 0 auto; */
+}
+
+.news_content{
+
+    margin-top: 40px;
+    margin-bottom: 220px;
+}
+
+.news_content p{
+    line-height: 1.6;
+    font-size: 18px;
+    text-indent:18px
+}
+
+.content1,.content2{
+    margin-top: 40px;
+}

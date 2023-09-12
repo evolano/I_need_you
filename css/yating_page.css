@@ -1,0 +1,174 @@
+@import url("reset.css");
+
+body {
+    font-family: arial;
+}
+
+
+.main {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+.top {
+    height: 300px;
+    background-color: #002B5B;
+    background-position: center top;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.top h1 {
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 70px;
+    margin-bottom: 30px;
+}
+
+.top .post {
+    width: 150px;
+    height: 50px;
+    outline: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: #002B5B;
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+    margin-left: 70px;
+}
+
+
+.top .apply {
+    width: 150px;
+    height: 50px;
+    color: #FFFFFF;
+    background-color: #67668B;
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+    margin-left: 70px;
+
+}
+
+.top div a {
+    display: inline-block;
+    margin-right: -30px;
+}
+
+.top img {
+    border-radius: 50%;
+    height: 220px;
+    width: 220px;
+    margin-left: 25%;
+    display: block;
+}
+
+.specialize_section {
+    border: 1px solid #A1A0A0;
+    margin-bottom: 30px;
+}
+
+
+.specialize p{
+    font-size: 20px;
+    line-height: 1.6;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+
+.personalDetail .detail {
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.fa-pen {
+    font-size: 20px;
+    margin-left: 5px;
+    transform: rotate(370deg);
+    color: #666666;
+}
+
+.resume_section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+.resume {
+    font-size: 32px;
+    font-weight: bold;
+
+}
+
+.redBlock {
+    width: 10px;
+    height: 40px;
+    background-color: #CD0025;
+    margin-right: 5px;
+}
+
+
+/* 專業技能介紹、作品成果、持有證照一起改 */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid #A1A0A0;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    background-color: #002B5B;
+    color: white;
+}
+
+
+
+
+
+.WorkAchievements_section {
+    border: 1px solid #A1A0A0;
+    margin-bottom: 30px;
+}
+
+.WorkAchievements {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap:0 20px;
+    padding: 20px;
+}
+
+.WorkAchievements img {
+    display: block;
+    width: 100%;
+}
+
+
+.certificate p{
+    font-size: 20px;
+    line-height: 1.6;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+
+.certificate_section {
+    border: 1px solid #A1A0A0;
+    margin-bottom: 30px;
+}
+
+
+/* 發案評論、接案評論，在另一支css裡面 */

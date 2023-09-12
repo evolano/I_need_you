@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哎你瞧-人才媒合平台</title>
+    <!-- headerfooter的rwd,不能刪掉 -->
+    <link rel="stylesheet" href="./css/header_footer.css">
+    <!-- bootstrap的css的cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!--bootstrap的js的cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!--jquery的cdn  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!--headerfooter的JS,不能刪掉 -->
+    <script src="./js/header_footer.js"> </script>
+    <!-- 要再增加link的話,請在下方繼續加 -->
+    <link rel="stylesheet" href="./css/owner_case_detail.css">
+    <link rel="stylesheet" href="./css/lightbox.css">
+</head>
+
+<body>
+    <!-- 底部聊天談窗按鈕--------------------------------------->
+    <a class="footer_chat_link" href=""><img src="./img/nav_footer/chat_icon.png" alt="">
+        <p>即時通訊</p>
+        </div>
+    </a>
+    <!-- 導覽列--------------------------------------->
+    <nav>
+        <div class="nav_top">
+            <div class="nav_topWidth">
+                <div class="lang">
+                    <span class="material-icons lang_earth"> language</span>
+                    中文
+                </div>
+                <ul>
+                    <li class="cn">中文</li>
+                    <li class="en">EN</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="nav_bottom">
+            <div class="nav_logo"><img src="./img/nav_footer/nav_logo.png" alt="" onclick="location.href='./index/index.html';"></div>
+            <i class="fa-solid fa-bars nav_hamburger"></i>
+            <ul class="nav_item">   
+                <i class="fa-solid fa-chevron-left nav_turnback"></i>
+                <li class="nav_link"><a href="./index.html">首頁</a></li>
+                <li class="nav_link ">工作類別<i class="fa-solid fa-chevron-down nav_fa-chevron-down"></i>
+                    <div class="nav_workKind_list">
+                        <ul class="nav_workKind">
+                            <li><a href="">人力</a></li>
+                            <li><a href="">餐飲</a></li>
+                            <li><a href="">門市</a></li>
+                            <li><a href="">辦公</a></li>
+                            <li><a href="">補救</a></li>
+                        </ul>
+                        <ul class="nav_workKind">
+                            <li><a href="">活動</a></li>
+                            <li><a href="">銷售</a></li>
+                            <li><a href="">市調</a></li>
+                            <li><a href="">設計</a></li>
+                            <li><a href="">其他</a></li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li class="nav_link"><a href="./News.html">最新公告</a></li>
+                <li class="nav_link nav_member">
+                    <a href="./../loginform.html" class="nav_membe_btn"><img src="./img/nav_footer/unknow_user.png"
+                        class="nav_userImg"><p class="nav_username" style="margin:0px;">用戶登入</p></a>
+                  </li>
+                  <li class="nav_link"><a href="#">下載APP</a></li>
+                  <li class="nav_link"><a href="./index/index.html" onclick="logout()">登出
+                    </a></li>
+            </ul>
+
+        </div>
+        <div class="nav_item_dark"></div>
+
+    </nav>
+    <!-- 佔nav空間用 100px--------------->
+    <div class="block_margin_top" style="height: 100px;width:100%;"></div>
+    <!-- 開始編寫內容,不死不休↓ -------->
+    <div class="case_btn_list">
+        <input type="button" class="case_btn chat_btn" value="傳送訊息" onclick="location.href='./chat_toOwner_wu.html';">
+        <input type="button" class="case_btn take_btn"  value="我要接案">
+    </div>
+    <div class="owner_case_wrapper">
+        <h1 class="case_intro_title big_title">開幕活動企劃</h1>
+        <div class="case_intro">
+            <p class="case_date">08.23 07:20</p>
+            <div class="split_share_line">
+                <div class="share_btn"><i class="fa-solid fa-share-nodes" style="font-size: 14px;margin-right:4px;"></i>分享</div>
+                <div class="gray_split_line"></div>
+            </div>
+
+            <h2>任務說明</h2>
+            <p class="case_intro_text content_padding ">對活動企劃有經驗者佳
+                <br>2023/08/24(四)10:00-15:00<br>8/20前提供完整企畫書,並於開幕當天到場協助活動流程順暢
+
+            </p>
+            <div class="case_detail_list">
+
+                <div class="case_detail">
+                    <h2>地點</h2>
+                    <p class="case_intro_text">台北市內湖區明水路二段6樓</p>
+                </div>
+                <div class="case_detail">
+                    <h2>需求人數</h2>
+                    <p class="case_intro_text">1人</p>
+                </div>
+
+                <div class="case_detail">
+                    <h2>支薪方式</h2>
+                    <p class="case_intro_text">匯款</p>
+                </div>
+                <div class="case_detail">
+                    <h2>薪水</h2>
+                    <p class="case_intro_text">5000元/次</p>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="gallery">
+            <h2>工作環境</h2>
+            <div class="gallery_rect">
+                <a href="./img/gallery/gallery_img/image1.png" data-lightbox="models" data-title="活動照片1"> <img
+                        src="./img/gallery/gallery_img/image1.png" alt=""></a>
+                <a href="./img/gallery/gallery_img/image2.png" data-lightbox="models" data-title="活動照片2"> <img
+                        src="./img/gallery/gallery_img/image2.png" alt=""></a>
+                <a href="./img/gallery/gallery_img/image3.png" data-lightbox="models" data-title="活動照片3"> <img
+                        src="./img/gallery/gallery_img/image3.png" alt=""></a>
+                <a href="./img/gallery/gallery_img/image4.png" data-lightbox="models" data-title="活動照片4"> <img
+                        src="./img/gallery/gallery_img/image4.png" alt=""></a>
+                <a href="./img/gallery/gallery_img/image5.png" data-lightbox="models" data-title="活動照片5"> <img
+                        src="./img/gallery/gallery_img/image5.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="comment">
+            <h1 class="big_title">此業主的評價</h1>
+            <div class="owner_card">
+                <img src="./img/user/owner_16.jpg" alt="" class="owner_img">
+                <div class="owner_detail">
+                    <p>伍靜文</p>
+                    <p>5.0★</p>
+                    <p> <i class="fa-solid fa-check"></i> 已認證業主</p>
+                </div>
+            </div>
+            <div class="comment_score">
+                <div class="left">
+                    <div class="big_score">5.0</div>
+                    <div>24次發案</div>
+                    <div>★★★★★</div>
+                </div>
+                <div class="right">
+                    <div class="score_bar">5★
+                        <div class="gray_bar">
+                            <div class="yellow_bar" style="width:78%"></div>
+                        </div>
+                        78%
+                    </div>
+                    <div class="score_bar">4★
+                        <div class="gray_bar">
+                            <div class="yellow_bar" style="width:10%"></div>
+                        </div>
+                        10%
+                    </div>
+                    <div class="score_bar">3★
+                        <div class="gray_bar">
+                            <div class="yellow_bar" style="width:5%"></div>
+                        </div>
+                        5%
+                    </div>
+                    <div class="score_bar">2★
+                        <div class="gray_bar">
+                            <div class="yellow_bar" style="width:0%"></div>
+                        </div>
+                        0%
+                    </div>
+                    <div class="score_bar">1★
+                        <div class="gray_bar">
+                            <div class="yellow_bar" style="width:0%"></div>
+                        </div>
+                        0%
+                    </div>
+                </div>
+            </div>
+            <div class="comment_card">
+                <div class="name">黃〇宏</div>
+                <div class="star">★★★★★</div>
+                <div class="tag_list">
+                    <div class="tag">#合作快速</div>
+                    <div class="tag">#好聊</div>
+                    <div class="tag">#成品好</div>
+                </div>
+                <div class="content">業主人很好，合作很愉快。</div>
+                <div class="class_date">
+                    <div>人力</div>
+                    <div>2023.07.11</div>
+                </div>
+
+            </div>
+            <div class="comment_card">
+                <div class="name">陳〇明</div>
+                <div class="star">★★★★★</div>
+                <div class="tag_list">
+                    <div class="tag">#合作快速</div>
+                    <div class="tag">#成品好</div>
+                </div>
+                <div class="content"></div>
+                <div class="class_date">
+                    <div>人力</div>
+                    <div>2023.04.11</div>
+                </div>
+
+            </div>
+            <div class="comment_card">
+                <div class="name">李〇德</div>
+                <div class="star">★★★★★</div>
+                <div class="tag_list">
+                    <div class="tag">#合作快速</div>
+                    <div class="tag">#好聊</div>
+                    <div class="tag">#推薦!</div>
+                </div>
+                <div class="content">超快出件!很推!👍👍👍</div>
+                <div class="class_date">
+                    <div>人力</div>
+                    <div>2023.06.08</div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+    <!--編寫結束--------->
+    <footer style="padding-bottom: 120px;">
+        <div class="footer_contain">
+            <div class="footer_content_detail footer_left">
+                <div class=" footer_left_one">
+                    <div>
+                        <p>
+                            官方服務中心
+                        </p>
+                        <ul>
+                            <li>週一至週五 8:30~21:00</li>
+                            <li>周末及國定假日 9:00~17:30</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>免費服務專線:</p>
+                        <ul>
+                            <li>02-0571-2241(台北)</li>
+                            <li>04-0571-2241(台中)</li>
+                            <li>06-0571-2241(台南)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" footer_left_two">
+                    <div>
+                        <p>台北總公司</p>
+                        <ul>
+                            <li>104台北市中山區南京東路三段219號5樓</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>台中分公司</p>
+                        <ul>
+                            <li>412 臺中市大里區翠堤路741號</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>台南分公司</p>
+                        <ul>
+                            <li>709 臺南市安南區淵西二街821號</li>
+                    </div>
+
+
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class=" footer_right footer_content_detail">
+                <div class="footer_right_one">
+                    <div class="footer_right_1">
+                        <p>哎你瞧人力銀行</p>
+                        <ul>
+                            <li>哎你瞧股份有限公司(私業許字第12001-X號)</li>
+                            <li>哎你瞧股份有限公司臺中分公司(私業許字第12001-X號)</li>
+                            <li>哎你瞧股份有限公司臺南分公司(私業許字第12001-X號)</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_right_2 footer_copyright">
+                        <p>哎你瞧股份有限公司版權所有</p>
+                        <p>©2023 I need you All Rights Reserved. </p>
+                        <p>最佳化瀏覽器: Google Chrome 、Safari、Firefox</p>
+                    </div>
+
+                </div>
+
+
+                <div class="footer_right_two ">
+                    <ul class="content">
+                        <li class="sns_link"><a href="">
+                                <img src="./img/nav_footer/icon_facebook.png" alt="">
+                                <p>官方臉書</p>
+                            </a>
+                        </li>
+                        <li class="sns_link"><a href="">
+                                <img src="./img/nav_footer/icon_ig.png" alt="">
+                                <p>官方ig</p>
+                            </a>
+                        </li>
+                        <li class="sns_link"><a href="">
+                                <img src="./img/nav_footer/icon_line.png" alt="">
+                                <p>官方line</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/lightbox-plus-jquery.js"></script>
+    <script src="./js/login_chack.js"></script>
+</body>
+
+</html>

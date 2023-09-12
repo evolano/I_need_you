@@ -1,0 +1,480 @@
+@import url(reset.css);
+
+
+/* 下方人力工作區標題 */
+
+.work{
+  
+  
+  margin-top: 10px;
+  
+}
+
+
+.work h2{
+font-size: 32px;
+display: inline;
+font-weight: bolder;
+vertical-align: middle;
+ /* 可以根据需要调整标题与卡片之间的间距 */
+margin-left: 10px;
+
+}
+
+.small{
+  font-size: 16px;
+  margin-left: 830px;
+  color: rgb(88, 88, 88);
+  font-weight: bolder;
+}
+
+
+.bigline{
+width: 1200px;
+margin: 0 auto;
+
+}
+
+
+
+
+
+
+.line{
+	display: inline-block;
+	width: 10px;
+	height: 30px;
+	background-color: rgb(205, 0, 37);
+	
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+
+
+
+.work2{
+  
+  margin: 0 auto;
+  margin-top: 40px;
+  
+
+}
+
+.work2 h3{
+  margin-left: 200px;
+  
+  font-size: 24px;
+  display: inline;
+  font-weight: bolder;
+  line-height:1.6;
+  position:relative;
+    left:2%;
+    
+    
+
+}
+
+.work2p1{
+  margin-left: 220px;
+  font-size: 18px;
+  color: #CD0025;
+  font-weight: bolder;
+  line-height:1.6;
+  vertical-align: middle;
+  
+  
+  
+}
+
+.work2p2{
+  
+  margin-left: 220px;
+  font-size: 18px;  
+  font-weight: bolder;
+  line-height:1.6;
+  
+  }
+
+
+
+
+
+/* 人物卡片 很複雜*/
+.owner-container {
+  text-align: center; /* 让内容在容器内水平居中 */
+  margin: 0 auto; /* 使用 auto 居中容器本身 */
+  
+  margin-top: 50px;
+ margin-left: 10px;
+  
+}
+
+
+
+.owner{
+  
+  text-align: center;
+  margin: 0 auto;
+  
+  padding-bottom: 50px;
+  overflow: hidden;
+  display: flex;
+ 
+
+  
+  
+  
+}
+
+.txt{
+width: 150px;
+height: 365px;
+float: left;
+
+
+
+}
+
+.card{
+
+width: 280px;
+
+line-height: 1.6;
+float: left;
+margin-left: 10px;
+
+}
+
+.card p{
+  text-align: center;
+  font-size: 16px;
+  font-weight: bolder;
+  line-height: 1.6;
+}
+
+.cardp2{
+  text-align: center;
+  font-size: 14px;
+  font-weight: bolder;
+  line-height: 1.6;
+}
+
+  
+  
+  /* 搜尋欄 */
+
+  
+.taskpic{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+ /* 搜尋欄 */
+
+  
+  
+  /* 人物卡片 很複雜*/
+  .owner-container {
+    text-align: center; /* 让内容在容器内水平居中 */
+     /* 使用 auto 居中容器本身 */
+      
+   margin-left: 13%;
+   
+   
+
+    
+  }
+  
+  
+  
+  .owner{
+    
+    text-align: center;
+    margin: 0 auto;    
+       
+    display: flex;
+   
+  
+    
+    
+    
+  }
+  
+  
+  
+  .card{
+  width: 280px;
+  display: block;
+  
+  line-height: 1.6;
+  float: left;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  border: none; /* 去除边框 */
+  }
+  
+  .card p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bolder;
+    line-height: 1.6;
+  }
+  
+  .cardp2{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: 1.6;
+  }
+
+
+
+
+
+.taskpic{
+  background-image: url(../img/banner/task_1200x190.jpg);
+  max-width: 1200px;
+  height: 190px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+
+
+
+
+
+
+
+  /* 下方任務 */
+
+
+
+
+  .task {
+    
+    grid-template-columns: repeat(2, 1fr); /* 两列布局 */
+    gap:10px; /* 两列之间的间距 */
+    /* 设置宽度为 100%，以适应容器 */
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex; /* 使用 Flex 布局 */
+  flex-wrap: wrap; /* 允许子元素自动换行 */
+    
+    
+    
+    
+}
+
+.taskjpg{
+  
+  width: 200px;
+  height: 200px;
+}
+
+  .taskcard{
+    display: flex;
+    width: 550px;
+    height: 200px;
+    border: 1px solid #ccc; /* 添加边框 */
+    background-color: #f5f5f5; /* 设置背景颜色 */
+    
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+.taskcarda{
+  margin-top: 20px;
+  margin-left: 20px;
+  
+}
+
+.taskcarda h2{
+font-size: 22px;
+font-weight: bolder;
+line-height: 2;
+margin-top: -10px;
+}
+
+.taskcarda p{
+font-size: 18px;
+font-weight: bold;
+line-height: 1.6;
+
+}
+
+.taskcarda button{
+  color: #ffffff;
+  background-color: #002B5B;
+  width: 120px;
+  height: 40px;
+  margin-left: 190px;
+  margin-top: 30px;
+}
+
+.small2{
+  font-size: 16px;
+  color: #514a88;
+  font-weight: bolder;
+  margin-left: 75px;
+}
+
+.taskimg{
+  margin: 0 auto;
+ 
+}
+
+
+
+
+
+
+ @media screen and (max-width: 1200px) { 
+
+  
+.card{
+  max-width: 800px;
+ margin-left: 120px;
+}
+
+.task{
+  margin-left: 40px;
+}
+
+.taskimg{
+  margin: 0 auto;
+}
+
+
+
+
+
+ }
+
+@media screen and (max-width: 1159px) {
+  .task {
+    margin-left: 25%;
+  }
+  .taskcard {
+    
+    margin-right: 20px; /* 两个任务卡片之间的间距 */
+    margin-bottom: 20px; /* 底部间距 */
+  }
+}
+
+
+
+@media screen and (max-width: 1099px) {
+
+
+  .taskimg{
+    max-width: 530px;
+    
+   
+    margin-top: 10px;
+    margin-left: 80px;
+    
+      
+  } 
+
+
+
+
+
+
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+@media screen and (max-width: 576px) {
+  
+.owner-container{
+  display: none;
+}
+
+.bigline{
+  display: none;
+}
+
+
+.owner{
+  display: none;
+}
+
+.flex-container{
+  display: none;
+}
+
+.taskpic{
+  background-image: url(../img/banner/task_576x400.jpg);
+  width: 100%;
+  height: 400px;
+  margin-top: -50px;
+  
+  
+  
+}
+.taskimg{
+  margin-left: 50px;
+}
+
+.task{
+  margin-left: -10px;
+}
+
+.taskcard{
+  display: flex;
+  width: 500px;
+  height: 200px;
+  border: 1px solid #ccc; /* 添加边框 */
+  background-color: #f5f5f5; /* 设置背景颜色 */
+  margin-left: 50px;
+  margin-top: 5px;
+  
+}
+
+.taskcarda h2{
+  font-size: 18px;
+  font-weight: bolder;
+  line-height: 2;
+  margin-top: -10px;
+  }
+  
+  .taskcarda p{
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.6;
+  
+  }
+  
+  .taskcarda button{
+    color: #ffffff;
+    background-color: #002B5B;
+    width: 120px;
+    height: 35px;
+    margin-left: 140px;
+    margin-top: 60px;
+  }
+  
+  .small2{
+    font-size: 16px;
+    color: #514a88;
+    font-weight: bolder;
+    margin-left: 60px;
+  }
+
+}

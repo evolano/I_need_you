@@ -1,0 +1,57 @@
+@import url(reset.css);
+
+
+.steppic{
+    max-width: 930px;
+    min-width: 414px;
+    margin: 0 auto;
+    margin-top: 70px;
+   
+}
+
+.finish{
+    width: 100%;
+  
+    
+}
+.wait{
+    
+    text-align: center;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-top: 120px;
+    margin-bottom: 120px;
+ 
+    
+}
+
+
+.sent {
+    display:block;
+    margin: 0 auto;
+    width: 180px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background-color: #002B5B;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 6px;
+    text-decoration-line: none;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    
+  
+   
+}
+
+
+
+
+@media screen and (max-width:576px) {
+    .wait{
+        font-size: 20px;
+    }
+    
+}

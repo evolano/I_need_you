@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哎你瞧-人才媒合平台</title>
+    <!-- headerfooter的rwd,不能刪掉 -->
+    <link rel="stylesheet" href="./css/header_footer.css">
+    <!-- bootstrap的css的cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!--bootstrap的js的cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!--google material的cdn  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!--headerfooter的JS,不能刪掉 -->
+    <script src="./js/header_footer.js"> </script>
+    <!-- 要再增加link的話,請在下方繼續加 -->
+    <link rel="stylesheet" href="./css/yating_page.css">
+    <link rel="stylesheet" href="./css/comment_rain.css">
+
+    <!-- <script>if (localStorage.getItem("user_login") = null) { location.href = './index/index.html'; }</script> -->
+</head>
+
+<body>
+    <!-- 底部聊天談窗按鈕--------------------------------------->
+    <a class="footer_chat_link" href=""><img src="./img/nav_footer/chat_icon.png" alt="">
+        <p>即時通訊</p>
+        </div>
+    </a>
+    <!-- 導覽列--------------------------------------->
+    <nav>
+        <div class="nav_top">
+            <div class="nav_topWidth">
+                <div class="lang">
+                    <span class="material-icons lang_earth"> language</span>
+                    中文
+                </div>
+                <ul>
+                    <li class="cn">中文</li>
+                    <li class="en">EN</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="nav_bottom">
+            <div class="nav_logo"><img src="./img/nav_footer/nav_logo.png" alt="" onclick="location.href='./index/index.html';"></div>
+            <i class="fa-solid fa-bars nav_hamburger"></i>
+            <ul class="nav_item">   
+                <i class="fa-solid fa-chevron-left nav_turnback"></i>
+                <li class="nav_link"><a href="./index.html">首頁</a></li>
+                <li class="nav_link ">工作類別<i class="fa-solid fa-chevron-down nav_fa-chevron-down"></i>
+                    <div class="nav_workKind_list">
+                        <ul class="nav_workKind">
+                            <li><a href="">人力</a></li>
+                            <li><a href="">餐飲</a></li>
+                            <li><a href="">門市</a></li>
+                            <li><a href="">辦公</a></li>
+                            <li><a href="">補救</a></li>
+                        </ul>
+                        <ul class="nav_workKind">
+                            <li><a href="">活動</a></li>
+                            <li><a href="">銷售</a></li>
+                            <li><a href="">市調</a></li>
+                            <li><a href="">設計</a></li>
+                            <li><a href="">其他</a></li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li class="nav_link"><a href="./News.html">最新公告</a></li>
+                <li class="nav_link nav_member">
+                    <a href="./../loginform.html" class="nav_membe_btn"><img src="./img/nav_footer/unknow_user.png"
+                        class="nav_userImg"><p class="nav_username" style="margin:0px;">用戶登入</p></a>
+                  </li>
+                  <li class="nav_link"><a href="#">下載APP</a></li>
+                  <li class="nav_link"><a href="./index/index.html" onclick="logout()">登出
+                    </a></li>
+            </ul>
+
+        </div>
+        <div class="nav_item_dark"></div>
+
+    </nav>
+    <!-- 佔nav空間用 100px--------------->
+    <div class="block_margin_top" style="height: 100px;width:100%;"></div>
+    <!-- 開始編寫內容,不死不休↓ -------->
+
+
+    <!-- 雅婷上半部 -->
+    <div class="top">
+        <img class="top_user_img" src="./img/user/unknow_user.png" alt="">
+        <div>
+            <h1>陳雅婷</h1>
+            <a class="post" id="post" href="./Yating_Job_Posting.html">我發布的工作</a>
+            <a class="apply" id="apply" href="./Yating_apply_job.html">已應徵的工作</a>
+        </div>
+    </div>
+
+    <!-- 我的接案資料開始 -->
+    <section class="main">
+        <div class="personalDetail">
+            <h1 class="detail"> 我的接案資料<i class="fa-solid fa-pen"></i></h1>
+
+
+            <!-- 履歷旁邊的紅條 -->
+            <div class="resume_section">
+                <div class="redBlock"></div>
+                <h1 class="resume">履歷</h1>
+            </div>
+
+            <!--專業技能介紹 -->
+            <div class="specialize_section">
+                <h2>專業技能介紹</h2>
+
+                <div class="specialize">
+                    <p>1. 活動企劃： 策劃各種類型的活動，包括會議、展覽、產品發等。我將從概念到執行，確保活動順利進行，並留下深刻的印象。</p>
+
+                    <p>2. 品牌策劃： 幫助您塑造獨特的品牌形象，從命名、標誌設計到品牌故事，我將幫助您在市場中脫穎而出。</p>
+
+
+                    <p>3. 產品推廣計劃： 為您的產品創建精心計劃的推廣策略，包括線上線下的宣傳手段，幫助您擴大市場份額。</p>
+
+
+                    <p>4. 營銷企劃： 制定全面的營銷策略，從社交媒體到廣告活動，讓您的目標受眾充分了解您的價值和優勢。</p>
+                </div>
+            </div>
+
+
+            <!----------作品成果-------->
+            <div class="WorkAchievements_section">
+                <h2>作品成果</h2>
+                <div class="WorkAchievements">
+                    <img src="./img/Working_Environment/WorkingEnvironment_01.png" alt="">
+
+                    <img src="./img/Working_Environment/WorkingEnvironment_02.png" alt="">
+
+
+                    <img src="./img/Working_Environment/WorkingEnvironment_03.png" alt="">
+
+                    <img src="./img/Working_Environment/WorkingEnvironment_04.png" alt="">
+
+                    <img src="./img/Working_Environment/WorkingEnvironment_05.png" alt="">
+
+                    <img src="./img/Working_Environment/WorkingEnvironment_06.png" alt="">
+                </div>
+            </div>
+
+            <!-------持有證照---- -->
+            <div class="certificate_section">
+                <h2>持有證照</h2>
+
+                <div class="certificate">
+
+                    <p>1. CVCDA企業財務企劃師-丙級</p>
+                    <p>2. CCAPP 青年活動企劃師</p>
+                    <p>3. TBSA商務企劃能力檢定</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- 發案評論、接案評論 -->
+
+
+        <div class="comment">
+            <div class="comment_score">
+                <div class="left">
+                    <div class="big_score">5.0</div>
+                    <div>24次發案</div>
+                    <div>★★★★★</div>
+                </div>
+                <div class="right">
+                    <div class="score_bar">5★
+                        <div class="gray_bar">
+                            <div class="yellow_bar" style="width:78%"></div>
+                        </div>
+                        78%
+                    </div>
+                    <div class="score_bar">4★
+                        <div class="gray_bar">
+                            <div class="yellow_bar" style="width:10%"></div>
+                        </div>
+                        10%
+                    </div>
+                    <div class="score_bar">3★
+                        <div class="gray_bar">
+                            <div class="yellow_bar" style="width:5%"></div>
+                        </div>
+                        5%
+                    </div>
+                    <div class="score_bar">2★
+                        <div class="gray_bar">
+                            <div class="yellow_bar" style="width:0%"></div>
+                        </div>
+                        0%
+                    </div>
+                    <div class="score_bar">1★
+                        <div class="gray_bar">
+                            <div class="yellow_bar" style="width:0%"></div>
+                        </div>
+                        0%
+                    </div>
+                </div>
+            </div>
+            <div class="comment_card">
+                <div class="name">黃〇宏</div>
+                <div class="star">★★★★★</div>
+                <div class="tag_list">
+                    <div class="tag">#合作快速</div>
+                    <div class="tag">#好聊</div>
+                    <div class="tag">#成品好</div>
+                </div>
+                <div class="content">業主人很好，合作很愉快。</div>
+                <div class="class_date">
+                    <div>人力</div>
+                    <div>2023.07.11</div>
+                </div>
+
+            </div>
+            <div class="comment_card">
+                <div class="name">陳〇明</div>
+                <div class="star">★★★★★</div>
+                <div class="tag_list">
+                    <div class="tag">#合作快速</div>
+                    <div class="tag">#成品好</div>
+                </div>
+                <div class="content"></div>
+                <div class="class_date">
+                    <div>人力</div>
+                    <div>2023.04.11</div>
+                </div>
+
+            </div>
+            <div class="comment_card">
+                <div class="name">李〇德</div>
+                <div class="star">★★★★★</div>
+                <div class="tag_list">
+                    <div class="tag">#合作快速</div>
+                    <div class="tag">#好聊</div>
+                    <div class="tag">#推薦!</div>
+                </div>
+                <div class="content">超快出件!很推!👍👍👍</div>
+                <div class="class_date">
+                    <div>人力</div>
+                    <div>2023.06.08</div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+    <input type="button" value="刪除個人資料" onclick=deleteUserDocument()
+        style="border:none;background-color: rgb(255, 255, 255);color:rgb(230, 230, 230);display: block;margin:0 auto;">
+    <input type="button" value="刪除專家資料" onclick=deleteExpertDocument()
+        style="border:none;background-color: rgb(255, 255, 255);color:rgb(230, 230, 230);display: block;margin:0 auto;">
+    <input type="button" value="刪除業主資料" onclick=deleteOwnerDocument()
+        style="border:none;background-color: rgb(255, 255, 255);color:rgb(230, 230, 230);display: block;margin:0 auto;">
+
+
+    <!--編寫結束--------->
+    <footer>
+        <div class="footer_contain">
+            <div class="footer_content_detail footer_left">
+                <div class=" footer_left_one">
+                    <div>
+                        <p>
+                            官方服務中心
+                        </p>
+                        <ul>
+                            <li>週一至週五 8:30~21:00</li>
+                            <li>周末及國定假日 9:00~17:30</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>免費服務專線:</p>
+                        <ul>
+                            <li>02-0571-2241(台北)</li>
+                            <li>04-0571-2241(台中)</li>
+                            <li>06-0571-2241(台南)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" footer_left_two">
+                    <div>
+                        <p>台北總公司</p>
+                        <ul>
+                            <li>104台北市中山區南京東路三段219號5樓</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>台中分公司</p>
+                        <ul>
+                            <li>412 臺中市大里區翠堤路741號</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>台南分公司</p>
+                        <ul>
+                            <li>709 臺南市安南區淵西二街821號</li>
+                    </div>
+
+
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class=" footer_right footer_content_detail">
+                <div class="footer_right_one">
+                    <div class="footer_right_1">
+                        <p>哎你瞧人力銀行</p>
+                        <ul>
+                            <li>哎你瞧股份有限公司(私業許字第12001-X號)</li>
+                            <li>哎你瞧股份有限公司臺中分公司(私業許字第12001-X號)</li>
+                            <li>哎你瞧股份有限公司臺南分公司(私業許字第12001-X號)</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_right_2 footer_copyright">
+                        <p>哎你瞧股份有限公司版權所有</p>
+                        <p>©2023 I need you All Rights Reserved. </p>
+                        <p>最佳化瀏覽器: Google Chrome 、Safari、Firefox</p>
+                    </div>
+
+                </div>
+
+
+                <div class="footer_right_two ">
+                    <ul class="content">
+                        <li class="sns_link"><a href="">
+                                <img src="./img/nav_footer/icon_facebook.png" alt="">
+                                <p>官方臉書</p>
+                            </a>
+                        </li>
+                        <li class="sns_link"><a href="">
+                                <img src="./img/nav_footer/icon_ig.png" alt="">
+                                <p>官方ig</p>
+                            </a>
+                        </li>
+                        <li class="sns_link"><a href="">
+                                <img src="./img/nav_footer/icon_line.png" alt="">
+                                <p>官方line</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="./js/login_chack.js"></script>
+    <script>
+        if (localStorage.getItem("user_login") != null) {
+
+            if (localStorage.getItem("expert_login") != null) {
+                document.getElementsByClassName("top_user_img")[0].src = "./img/user/main_user.jpg";
+            } else {
+                if (localStorage.getItem("owner_login") != null) {
+                    console.log('存在');
+                    document.getElementsByClassName("top_user_img")[0].src = "./img/user/main_user.jpg";
+                } else {
+                    console.log("owner_login不存在");
+                    document.getElementsByClassName("top_user_img")[0].src = "./img/user/unknow_user.png";
+                }
+
+                document.getElementById("apply").href = "./expert_S1_form.html";
+
+                document.getElementsByClassName('main')[0].innerHTML = "<div style='height:40vh;'></div>"
+            }
+
+            if (localStorage.getItem("owner_login") != null) { console.log('::::') }
+            else {
+                document.getElementById("post").href = "./owner_S1_form.html";
+                ;
+            }
+
+        } else {
+            location.href = './index/index.html';
+        }
+
+
+
+
+
+        function deleteExpertDocument() {
+            localStorage.removeItem('expert_login');
+            location.href = './Yating_page.html';
+        }
+        function deleteOwnerDocument() {
+            localStorage.removeItem('owner_login');
+            location.href = './Yating_page.html';
+        }
+        function deleteUserDocument() {
+            localStorage.removeItem('user_login');
+            localStorage.removeItem('expert_login');
+            localStorage.removeItem('owner_login');
+            location.href = './index/index.html';
+        }
+    </script>
+</body>
+<!-- location.href = './index/index.html'; -->
+
+</html>

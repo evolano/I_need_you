@@ -1,0 +1,266 @@
+@import url('reset.css');
+
+.main {
+    width: 1200px;
+    margin: 150px auto auto;
+    padding: 0 20px;
+    font-family: Arial;
+    /* outline: 1px solid blue; */
+}
+
+.contain {
+    max-width: 980px;
+    margin: 0 auto;
+    /* outline: 1px solid red; */
+}
+
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.breadcrumb {
+    margin-top: 50px;
+}
+
+.breadcrumb-item.active {
+    color: #002B5B;
+}
+
+
+.personalJob {
+    margin-top: 50px;
+
+}
+
+.personalJob a {
+    display: inline-block;
+    font-size: 32px;
+    font-weight: bold;
+
+}
+
+.DoneJob {
+    color: #707070;
+    margin-left: 40px;
+}
+
+.postJob::after {
+    content: '';
+    display: block;
+    width: 190px;
+    height: 8px;
+    background-color: #102C57;
+    margin-top: 10px;
+}
+
+.search_section {
+    margin-top: 100px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.custom-select {
+    margin-left: 20px;
+}
+
+
+input[type="text"][name="query"] {
+    width: 320px;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 0px;
+    outline: none;
+}
+
+input::placeholder {
+    color: #AFAFAF;
+}
+
+
+input[type="submit"] {
+    width: 200px;
+    height: 60px;
+    background-color: #002B5B;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.search form {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+
+
+
+.custom-select select {
+    width: 180px;
+    height: 60px;
+    border-radius: 0;
+    background-color: white;
+}
+
+
+.custom-select {
+    position: relative;
+}
+
+.custom-select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select:first-child {
+    padding-left: 25px;
+}
+
+.custom-select {
+    position: relative;
+
+}
+
+.custom-select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select:first-child {
+    padding-left: 25px;
+}
+
+
+.custom-select {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-select select {
+    padding-right: 30px;
+}
+
+.custom-select i {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* ------------雅婷應徵的工作區------------- */
+.job_section {
+    margin-top: 50px;
+}
+
+
+.apply_job_card {
+    border: 1px solid #A1A0A0;
+    display: flex;
+    width: 980px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.photo img {
+    width: 230px;
+    height: 200px;
+    flex-shrink: 1;
+}
+
+
+.job_detail {
+    margin-left: 70px;
+    margin-top: 34px;
+}
+
+
+
+.job_name {
+    font-size: 28px;
+    font-family: bold;
+
+}
+
+
+.comment {
+    font-size: 20px;
+    display: block;
+    margin-top: 13px;
+}
+
+.score {
+    margin-left: 20px;
+
+}
+
+
+.buttons {
+    display: flex;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.boss_file {
+    display: block;
+    width: 150px;
+    height: 50px;
+    background-color: #002B5B;
+    color: #fff;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.message {
+    display: block;
+    width: 140px;
+    height: 50px;
+    color: #002B5B;
+    line-height: 50px;
+    border: 1px solid #505050;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.fa-facebook-messenger {
+    margin-right: 5px;
+}
+
+
+.cancel {
+    display: block;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    margin-left: 230px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------頁碼-------------- */
+
+.page_number {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    margin-top: 170px;
+}
