@@ -5,7 +5,7 @@ if (localStorage.getItem("user_login") != null) {
   document.getElementsByClassName('nav_userImg')[0].src = "./img/nav_footer/unknow_user.png";
   document.getElementsByClassName('nav_username')[0].innerHTML = "陳雅婷"
   console.log('已登入')
-  document.getElementsByClassName('nav_membe_btn')[0].href = "../Yating_page.html"
+  document.getElementsByClassName('nav_membe_btn')[0].href = "./Yating_page.html"
 
 
   if (localStorage.getItem("expert_login") != null) {
