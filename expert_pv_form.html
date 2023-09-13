@@ -107,7 +107,7 @@
 
 
 
-  <a href="expert_finish_form.html" class="sent" >送出</a>
+  <a href="expert_finish_form.html" class="sent" onclick="expert_signup()">送出</a>
 
 
 
@@ -210,6 +210,11 @@
     </div>
   </footer>
   <script src="./js/login_chack.js"></script>
+  <script>
+    function expert_signup() {
+      localStorage.setItem('expert_login', 'in')
+    }
+  </script>
 </body>
 
 </html>
